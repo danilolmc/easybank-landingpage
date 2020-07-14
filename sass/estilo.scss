@@ -1,6 +1,109 @@
-$cor: red;
+$footerEtitulos: hsl(233, 26%, 24%);
+$limeGreen-gradiente:  hsl(136, 65%, 51%);
+$brightCyan-gradiente:  hsl(192, 70%, 51%);
+$fontesEtextos: hsl(233, 8%, 62%);
+$menubg-fontfooter: hsl(0, 0%, 100%);
+$bgheader-bgarticles: hsl(220, 16%, 96%);
+$articles: hsl(0, 0%, 98%);
+$gradiente-botoes: linear-gradient(to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+
+*{
+    font-family: "public sans";
+}
 
 body{
 
-    background: $cor;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
 }
+
+header{
+    background-color: $articles;
+    background-image: $articles;
+}
+
+header .menu{
+    background-color: $menubg-fontfooter;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+header .menu div{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 100%;
+}
+
+header .menu .menu_list{
+    
+    height: 100%;
+    margin: 0 0 6px 0;
+}
+header .menu .menu_list li{
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: $fontesEtextos;
+    margin: 0 10px;
+    border: none;
+    border-bottom: 3px solid $menubg-fontfooter;
+    transition: color .5s, border-color .5s;
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+}
+
+header .menu .menu_list li:hover{
+    
+    border-bottom: 3px solid $brightCyan-gradiente;
+    color: $footerEtitulos;
+}
+
+.button_cad{
+    
+    border: none;
+    padding: 12px 30px;
+    border-radius: 40px;
+    background: $gradiente-botoes;
+    color: $menubg-fontfooter;
+    font-weight:400;
+    transition: .5s;
+    cursor: pointer;
+}
+.button_cad:hover{
+    
+    opacity: .5;
+}
+
+header .banner{
+    width: 400px;
+    transform: translateY(100px);
+    margin: 0 100px;
+}
+
+header .banner .banner_title{
+    
+    color: $footerEtitulos;
+    font-weight: 300;
+    font-size: 50px;
+}
+
+header .banner .banner_text{
+
+    color: $fontesEtextos;
+    margin-bottom: 35px;
+}
+
+

@@ -1,2 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+* {
+  font-family: "public sans"; }
+
 body {
-  background: red; }
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box; }
+
+header {
+  background-color: #fafafa;
+  background-image: #fafafa; }
+
+header .menu {
+  background-color: white;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100; }
+
+header .menu div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 100%; }
+
+header .menu .menu_list {
+  height: 100%;
+  margin: 0 0 6px 0; }
+
+header .menu .menu_list li {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #9698a6;
+  margin: 0 10px;
+  border: none;
+  border-bottom: 3px solid white;
+  transition: color .5s, border-color .5s;
+  position: relative;
+  height: 100%;
+  cursor: pointer; }
+
+header .menu .menu_list li:hover {
+  border-bottom: 3px solid #2bb7da;
+  color: #2d314d; }
+
+.button_cad {
+  border: none;
+  padding: 12px 30px;
+  border-radius: 40px;
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  color: white;
+  font-weight: 400;
+  transition: .5s;
+  cursor: pointer; }
+
+.button_cad:hover {
+  opacity: .5; }
+
+header .banner {
+  width: 400px;
+  transform: translateY(100px);
+  margin: 0 100px; }
+
+header .banner .banner_title {
+  color: #2d314d;
+  font-weight: 300;
+  font-size: 50px; }
+
+header .banner .banner_text {
+  color: #9698a6;
+  margin-bottom: 35px; }
