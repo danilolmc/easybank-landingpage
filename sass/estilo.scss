@@ -3,7 +3,7 @@ $limeGreen-gradiente:  hsl(136, 65%, 51%);
 $brightCyan-gradiente:  hsl(192, 70%, 51%);
 $fontesEtextos: hsl(233, 8%, 62%);
 $menubg-fontfooter: hsl(0, 0%, 100%);
-$bgheader-bgarticles: hsl(220, 16%, 96%);
+$bgheader-bgwhychoose: hsl(220, 16%, 96%);
 $articles: hsl(0, 0%, 98%);
 $gradiente-botoes: linear-gradient(to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
 
@@ -23,8 +23,29 @@ body{
 }
 
 header{
+    max-height: 700px;
+    height:700px;
+    overflow: hidden;
+    background: $bgheader-bgwhychoose;
+}
+
+header > section{
+   
     background-color: $articles;
-    background-image: $articles;
+    background-image: url("../img/bg-intro-desktop.svg");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 520px -120px;
+    height: 80%;
+    
+}
+
+header > img{
+    
+    width: 52%;
+    transform: translate(110%,-85%);
+    position: relative;
+    z-index: 10;
 }
 
 header .menu{
@@ -81,6 +102,7 @@ header .menu .menu_list li:hover{
     font-weight:400;
     transition: .5s;
     cursor: pointer;
+    outline: none;
 }
 .button_cad:hover{
     
@@ -89,21 +111,56 @@ header .menu .menu_list li:hover{
 
 header .banner{
     width: 400px;
-    transform: translateY(100px);
+    transform: translateY(140px);
     margin: 0 100px;
+}
+
+.banner_title,.whyChoose_title,.articles_title,.whyChoose_list  h3{
+
+    font-weight: 400;
+    color: $footerEtitulos;
 }
 
 header .banner .banner_title{
     
-    color: $footerEtitulos;
-    font-weight: 300;
-    font-size: 50px;
+    font-size: 40px;
 }
 
-header .banner .banner_text{
+.banner_text,.whyChoose_subtitle,.whyChoose_list  p{
 
     color: $fontesEtextos;
     margin-bottom: 35px;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.whyChoose{
+    padding: 50px 30px 50px 100px;
+    transform: translateY(-100px);
+    background: $bgheader-bgwhychoose;
+    position: relative;
+    z-index: 1;
 }
 
 
+.whyChoose .whyChoose_list{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.whyChoose .whyChoose_list span{
+    
+    margin: 50px 30px 0 0px;
+}  
+
+.whyChoose .whyChoose_list span img{
+
+    margin-bottom: 20px;
+}
+
+.whyChoose .whyChoose_list span p{
+
+    text-align: left;
+    font-size: 14px;
+}  

@@ -9,8 +9,24 @@ body {
   box-sizing: border-box; }
 
 header {
+  max-height: 700px;
+  height: 700px;
+  overflow: hidden;
+  background: #f3f4f6; }
+
+header > section {
   background-color: #fafafa;
-  background-image: #fafafa; }
+  background-image: url("../img/bg-intro-desktop.svg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 520px -120px;
+  height: 80%; }
+
+header > img {
+  width: 52%;
+  transform: translate(110%, -85%);
+  position: relative;
+  z-index: 10; }
 
 header .menu {
   background-color: white;
@@ -56,21 +72,47 @@ header .menu .menu_list li:hover {
   color: white;
   font-weight: 400;
   transition: .5s;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
 
 .button_cad:hover {
   opacity: .5; }
 
 header .banner {
   width: 400px;
-  transform: translateY(100px);
+  transform: translateY(140px);
   margin: 0 100px; }
 
-header .banner .banner_title {
-  color: #2d314d;
-  font-weight: 300;
-  font-size: 50px; }
+.banner_title, .whyChoose_title, .articles_title, .whyChoose_list h3 {
+  font-weight: 400;
+  color: #2d314d; }
 
-header .banner .banner_text {
+header .banner .banner_title {
+  font-size: 40px; }
+
+.banner_text, .whyChoose_subtitle, .whyChoose_list p {
   color: #9698a6;
-  margin-bottom: 35px; }
+  margin-bottom: 35px;
+  font-size: 15px;
+  line-height: 22px; }
+
+.whyChoose {
+  padding: 50px 30px 50px 100px;
+  transform: translateY(-100px);
+  background: #f3f4f6;
+  position: relative;
+  z-index: 1; }
+
+.whyChoose .whyChoose_list {
+  display: flex;
+  justify-content: space-between; }
+
+.whyChoose .whyChoose_list span {
+  margin: 50px 30px 0 0px; }
+
+.whyChoose .whyChoose_list span img {
+  margin-bottom: 20px; }
+
+.whyChoose .whyChoose_list span p {
+  text-align: left;
+  font-size: 14px; }
