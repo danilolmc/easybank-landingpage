@@ -20,9 +20,8 @@ body{
     padding: 0;
     outline: none;
     box-sizing: border-box;
-}
-
-header{
+    
+    header{
     max-height: 700px;
     height:700px;
     overflow: hidden;
@@ -53,7 +52,7 @@ header{
         width: 100%;
         top: 0;
         z-index: 100;
-
+        
         div{
         
             display: flex;
@@ -61,20 +60,22 @@ header{
             align-items: center;
             padding: 0 40px;
             height: 100%;
-        }
 
-        .menu_list{
+      
+        }
         
+        .menu_list{
+            
             height: 100%;
             margin: 0 0 6px 0;
-
-            li{
             
+            li{
+                
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
                 color: $fontesEtextos;
-                margin: 0 10px;
+                margin: 0 20px;
                 border: none;
                 border-bottom: 3px solid $menubg-fontfooter;
                 transition: color .5s, border-color .5s;
@@ -89,7 +90,7 @@ header{
                 }
             }
         }        
-         
+        
     }
 
     .banner{
@@ -122,7 +123,7 @@ header{
 .banner_title,.whyChoose_title,
 .articles_title,.whyChoose_list  h3,
 span p.author, span h2{
-
+    
     font-weight: 400;
     color: $footerEtitulos;
 }
@@ -133,7 +134,7 @@ header .banner .banner_title{
 }
 
 .banner_text,.whyChoose_subtitle,.whyChoose_list  p{
-
+    
     color: $fontesEtextos;
     margin-bottom: 35px;
     font-size: 15px;
@@ -150,25 +151,25 @@ header .banner .banner_title{
     .whyChoose_title{
         font-size: 40px;
     }
-
+    
     .whyChoose_list{
     
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-
+        
         span{
-    
+            
             margin: 50px 20px 0 0px;
             width: 280px;
 
             img{
-    
+                
                 margin-bottom: 20px;
             }
 
             p{
-    
+                
                 text-align: left;
                 font-size: 14px;
             }  
@@ -185,11 +186,11 @@ header .banner .banner_title{
     
     background-color: $articles;
     padding: 50px 100px 100px 100px;
-
+    
     .articles_title{
         font-size: 40px;
     }
-
+    
     .list_articles{
         display: flex;
         flex-wrap: wrap;
@@ -213,7 +214,7 @@ header .banner .banner_title{
             div{
                 
                 padding: 20px;
-
+                
                 .author{
 
                     font-size: 13px;
@@ -232,7 +233,7 @@ header .banner .banner_title{
                 }
                 
                 p:last-child{
-
+                    
                     color: $fontesEtextos;
                     font-size: 15px;
                     line-height: 20px;
@@ -250,7 +251,7 @@ footer{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-
+    
     div:first-child{
         display: flex;
         height: 100px;
@@ -260,21 +261,21 @@ footer{
         align-items: center;
 
         span img{
-   
+            
             margin: 0 5px;
         }   
     }
-
+    
     div:nth-child(2){
 
         columns: 2;
         margin: 10px 0;
         vertical-align: top;
-
-        ul{
-
-            height: 100%;
         
+        ul{
+            
+            height: 100%;
+            
             li{
                 
                 list-style: none;
@@ -307,14 +308,21 @@ footer{
         justify-content: space-between;
         // align-items: center;
         
-
+        
         .button_cad{
             width: 180px;
         }
-
+        
         p{
             text-align: left;
             color: #fff;
         }
+    }
+}
+}
+
+@media (min-width:769px){
+    #menuMobile{
+        display: none;
     }
 }
