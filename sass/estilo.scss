@@ -22,8 +22,7 @@ body{
     box-sizing: border-box;
     
     header{
- 
-    background: $bgheader-bgwhychoose;
+
 
     .menu{
         background-color: $menubg-fontfooter;
@@ -188,6 +187,7 @@ footer{
             overflow: hidden;
             max-height: 700px;
             height:700px;
+            background: $bgheader-bgwhychoose;
         }
 
     #menuMobile{
@@ -243,9 +243,9 @@ footer{
             
             span{
                 
-                margin: 50px 20px 0 0px;
-                width: 280px;
-    
+                margin: 50px 10px;
+                width: 100%;
+                max-width: 300px;
                 img{
                     
                     margin-bottom: 20px;
@@ -284,12 +284,13 @@ footer{
         .list_articles{
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-evenly;
     
             span{
-                margin: 20px 30px 0 0;
-                min-width: 250px;
-                width: 250px;
+                margin: 20px 5px;
+                // min-width: 230px;
+                width: 100%;
+                max-width: 280px;
                 background: $menubg-fontfooter;
                 border-radius: 5px;
                 
