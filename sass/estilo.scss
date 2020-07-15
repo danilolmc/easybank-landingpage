@@ -22,28 +22,8 @@ body{
     box-sizing: border-box;
     
     header{
-    max-height: 700px;
-    height:700px;
-    overflow: hidden;
+ 
     background: $bgheader-bgwhychoose;
-    section{
-        
-        background-color: $articles;
-        background-image: url("../img/bg-intro-desktop.svg");
-        background-size: 80%;
-        background-repeat: no-repeat;
-        background-position: 520px -120px;
-        height: 80%;
-
-    }
-
-    img.banner_img{
-    
-        width: 52%;
-        transform: translate(110%,-85%);
-        position: relative;
-        z-index: 10;
-    }
 
     .menu{
         background-color: $menubg-fontfooter;
@@ -93,12 +73,6 @@ body{
         
     }
 
-    .banner{
-        width: 400px;
-        transform: translateY(140px);
-        margin: 0 100px;
-    }
-    
 }
 
 .button_cad{
@@ -128,122 +102,9 @@ span p.author, span h2{
     color: $footerEtitulos;
 }
 
-header .banner .banner_title{
-    
-    font-size: 50px;
-}
 
-.banner_text,.whyChoose_subtitle,.whyChoose_list  p{
-    
-    color: $fontesEtextos;
-    margin-bottom: 35px;
-    font-size: 15px;
-    line-height: 22px;
-}
 
-.whyChoose{
-    padding: 50px 30px 50px 100px;
-    margin-top: -100px;
-    background: $bgheader-bgwhychoose;
-    position: relative;
-    z-index: 1;
 
-    .whyChoose_title{
-        font-size: 40px;
-    }
-    
-    .whyChoose_list{
-    
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        
-        span{
-            
-            margin: 50px 20px 0 0px;
-            width: 280px;
-
-            img{
-                
-                margin-bottom: 20px;
-            }
-
-            p{
-                
-                text-align: left;
-                font-size: 14px;
-            }  
-            
-            
-        }  
-        
-    }
-    
-    
-}
-
-.articles{
-    
-    background-color: $articles;
-    padding: 50px 100px 100px 100px;
-    
-    .articles_title{
-        font-size: 40px;
-    }
-    
-    .list_articles{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-        span{
-            margin: 20px 30px 0 0;
-            min-width: 250px;
-            width: 250px;
-            background: $menubg-fontfooter;
-            border-radius: 5px;
-            
-            
-            img{
-                width: 100%;
-                height: 180px;
-                border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
-            }
-            
-            div{
-                
-                padding: 20px;
-                
-                .author{
-
-                    font-size: 13px;
-                }
-                
-                h2{
-                    
-                    font-size: 18px;
-                    cursor: pointer;
-                    transition: color .5s;
-                    
-                    &:hover{
-                        
-                        color: $brightCyan-gradiente;
-                    }
-                }
-                
-                p:last-child{
-                    
-                    color: $fontesEtextos;
-                    font-size: 15px;
-                    line-height: 20px;
-                    cursor: context-menu;
-                }
-            }
-        }
-    }
-    
-}
 
 
 footer{
@@ -321,8 +182,160 @@ footer{
 }
 }
 
-@media (min-width:769px){
+@media (min-width:886px){
+   
+        header{
+            overflow: hidden;
+            max-height: 700px;
+            height:700px;
+        }
+
     #menuMobile{
         display: none;
     }
+
+    header > section{
+        background-image: url("../img/bg-intro-desktop.svg");
+        background-color: $articles;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: 520px -120px;
+        height: 80%;
+
+    }
+
+    img.banner_img{
+    
+        width: 52%;
+        transform: translate(110%,-85%);
+        position: relative;
+        z-index: 10;
+    }
+
+    
+    .banner{
+        width: 400px;
+        transform: translateY(140px);
+        margin: 0 100px;
+        
+        .banner_title{
+    
+            font-size: 50px;
+        }
+    }
+
+    .whyChoose{
+        padding: 50px 30px 50px 100px;
+        margin-top: -100px;
+        background: $bgheader-bgwhychoose;
+        position: relative;
+        z-index: 1;
+    
+        .whyChoose_title{
+            font-size: 40px;
+        }
+        
+        .whyChoose_list{
+        
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+            span{
+                
+                margin: 50px 20px 0 0px;
+                width: 280px;
+    
+                img{
+                    
+                    margin-bottom: 20px;
+                }
+    
+                p{
+                    
+                    text-align: left;
+                    font-size: 14px;
+                }  
+                
+                
+            }  
+            
+        }
+        
+    }
+
+    .banner_text,.whyChoose_subtitle,.whyChoose_list  p{
+    
+        color: $fontesEtextos;
+        margin-bottom: 35px;
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .articles{
+    
+        background-color: $articles;
+        padding: 50px 100px 100px 100px;
+        
+        .articles_title{
+            font-size: 40px;
+        }
+        
+        .list_articles{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+    
+            span{
+                margin: 20px 30px 0 0;
+                min-width: 250px;
+                width: 250px;
+                background: $menubg-fontfooter;
+                border-radius: 5px;
+                
+                
+                img{
+                    width: 100%;
+                    height: 180px;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                }
+                
+                div{
+                    
+                    padding: 20px;
+                    
+                    .author{
+    
+                        font-size: 13px;
+                    }
+                    
+                    h2{
+                        
+                        font-size: 18px;
+                        cursor: pointer;
+                        transition: color .5s;
+                        
+                        &:hover{
+                            
+                            color: $brightCyan-gradiente;
+                        }
+                    }
+                    
+                    p:last-child{
+                        
+                        color: $fontesEtextos;
+                        font-size: 15px;
+                        line-height: 20px;
+                        cursor: context-menu;
+                    }
+                }
+            }
+        }
+        
+    }
+    
+    
+    
+    
 }
