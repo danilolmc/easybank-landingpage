@@ -106,87 +106,13 @@ span p.author, span h2{
 
 
 
-footer{
-    background: $footerEtitulos;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    
-    div:first-child{
-        display: flex;
-        height: 100px;
-        flex-direction: column;
-        margin: 40px 0px;
-        justify-content: space-between;
-        align-items: center;
-
-        span img{
-            
-            margin: 0 5px;
-        }   
-    }
-    
-    div:nth-child(2){
-
-        columns: 2;
-        margin: 10px 0;
-        vertical-align: top;
-        
-        ul{
-            
-            height: 100%;
-            
-            li{
-                
-                list-style: none;
-                color: #fff;
-                height: 30px;
-                margin-top: 0;
-                padding: 10px;
-                
-                a{
-                    color: #fff;
-                    text-decoration: none;
-                    transition: .5s;
-                    &:hover{
-                        color:$limeGreen-gradiente
-                    }
-                }
-            }
-
-            li:nth-child(3){
-                height: 50px;
-            }
-        }
-    }  
-    
-    div:last-child{
-        margin: 50px;
-        width: 226px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        // align-items: center;
-        
-        
-        .button_cad{
-            width: 180px;
-        }
-        
-        p{
-            text-align: left;
-            color: #fff;
-        }
-    }
-}
-}
 
 @media (min-width:886px){
    
         header{
             overflow: hidden;
-            max-height: 700px;
-            height:700px;
+            max-height: 800px;
+            height:800px;
             background: $bgheader-bgwhychoose;
         }
 
@@ -215,7 +141,7 @@ footer{
     
     .banner{
         width: 400px;
-        transform: translateY(140px);
+        transform: translateY(190px);
         margin: 0 100px;
         
         .banner_title{
@@ -226,7 +152,7 @@ footer{
 
     .whyChoose{
         padding: 50px 30px 50px 100px;
-        margin-top: -100px;
+        margin-top: -10%;
         background: $bgheader-bgwhychoose;
         position: relative;
         z-index: 1;
@@ -335,8 +261,122 @@ footer{
         }
         
     }
+
+}
+
+
+@media (min-width:885px){
+
     
+
+footer{
+    background: $footerEtitulos;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     
+    div:first-child{
+        display: flex;
+        height: 100px;
+        flex-direction: column;
+        margin: 40px 0px;
+        justify-content: space-between;
+        align-items: center;
+
+        span img{
+            
+            margin: 0 5px;
+        }   
+    }
     
+    div:nth-child(2){
+
+        columns: 2;
+        margin: 10px 0;
+        vertical-align: top;
+        
+        ul{
+            
+            height: 100%;
+            
+            li{
+                
+                list-style: none;
+                color: #fff;
+                height: 30px;
+                margin-top: 0;
+                padding: 10px;
+                
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    transition: .5s;
+                    &:hover{
+                        color:$limeGreen-gradiente
+                    }
+                }
+            }
+
+            li:nth-child(3){
+                height: 50px;
+            }
+        }
+    }  
     
+    div:last-child{
+        margin: 50px;
+        width: 246px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        
+        
+        .button_cad{
+            width: 180px;
+
+        }
+        
+        p{
+            text-align: right;
+            color: $fontesEtextos;
+            margin-top: 50px;
+        }
+       }
+    }
+    
+}
+}
+
+
+@media (min-width:887px) and (max-width:1206px){
+
+    header{
+        height: 700px;
+    }
+
+    header > section{
+        background-image: url("../img/bg-intro-desktop.svg");
+        background-color: $articles;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: 520px -120px;
+        max-height: 500px;
+        height: 500px;
+
+    }
+
+    
+    .whyChoose{
+        padding: 50px 30px 50px 100px;
+        transform: translateY(-14%);
+        background: $bgheader-bgwhychoose;
+        position: relative;
+        z-index: 1;
+    }
+
+    .banner{
+        position: relative;
+        top: -10%;
+    }
+
 }
