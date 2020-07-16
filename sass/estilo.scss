@@ -14,6 +14,20 @@ $gradiente-botoes: linear-gradient(to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%
     font-family: "public sans";
 }
 
+
+@keyframes anima_menu{
+
+    0%{opacity: 0;transform: translateY(20px);display: none;}
+    100%{opacity: 1;transform: translateY(0px);display: flex;}
+}
+
+@keyframes anima_menu_fechar{
+    
+    0%{opacity: 1;transform: translateY(0px);display: flex;}
+    100%{opacity: 0;transform: translateY(20px);display: none;}
+}
+
+
 body{
 
     margin: 0;
